@@ -22,8 +22,7 @@ for file in dir_list:
         width = 1080 
         height = int(width // ar)
         final = img.resize((width, height), Image.Resampling.LANCZOS)
-         
-        
+                 
     else:
         
         if(ar>1.9): 
@@ -38,7 +37,6 @@ for file in dir_list:
             left = (width - newwidth) // 2
             right = left + newwidth - 1
             final = resized.crop((left, 0, right, height))
-            
 
         else: 
             # resize and modify height
@@ -52,8 +50,6 @@ for file in dir_list:
             upper = (height - newheight) // 2
             lower = upper + newheight - 1
             final = resized.crop((0, upper, width, lower))
-            
-
     
     final.save(file)
     print("done " + file )
