@@ -28,11 +28,11 @@ for file in dir_list:
         if(ar>1.9): 
             # resize and modify width
             height = 1350
-            width = int(height // ar)
+            width = int(height * ar)
             resized = img.resize((width, height), Image.Resampling.LANCZOS)
 
             newAR = 1.9
-            newwidth = height // newAR
+            newwidth = height * newAR
             # crop
             left = (width - newwidth) // 2
             right = left + newwidth - 1
