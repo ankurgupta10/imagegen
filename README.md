@@ -1,5 +1,5 @@
 # imagegen
-resize and crop for instagram accecptable images
+resize and crop images for instagram accecptable standard/format
 
 # Instagram Docs
 https://help.instagram.com/1631821640426723
